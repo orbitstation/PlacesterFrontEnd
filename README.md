@@ -2,7 +2,11 @@ PlacesterFrontEnd
 =================
 two page SPA - responsive layout
 
-*dont miss the second page, click on the address in the tour section to get to it. 
+Note: I have posted this code on my own portfolio site because you cant see this work localy on IE or Chrome due to a known issue with bootstrap.
+  http://Orbitstation.com
+  http://Orbitstation.com/spa   <-- this is this project
+
+*dont miss the second page, click on an address on the tour section to get to it. 
  Its a template that demonstrates how the listings page could work. 
 
 this is a demo front end for placester, it makes use of...
@@ -18,5 +22,4 @@ I put in about 8 hours total, and I skiped the javascript menu on the home page,
 have a clear picture of how it should function, and it looks as if there may have been a 
 library function in mind when it was designed, ?maybe Jumbotron in bootstrap? So I put my
 efforts into making the MVC/SPA code work, and then later into the second page, and its data source. 
-
 
