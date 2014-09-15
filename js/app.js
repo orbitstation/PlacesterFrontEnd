@@ -2,7 +2,7 @@
 //   the program starts here , document.ready
 //
 $(document).on("ready", function () {
-	directory.loadTemplates(["homePageView"],
+	directory.loadTemplates(["homePageView","listingView"],
     function () {
 		directory.router = new directory.Router();
         Backbone.history.start();

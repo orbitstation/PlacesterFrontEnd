@@ -1,0 +1,29 @@
+<div class="row listingBox">
+	<div class="col-xs-12 col-md-12 col-lg-12">
+		<h2 class="big"><%= attributes[0].name %></h2>		
+
+
+
+
+
+		<%
+			x=0;
+			_.each(attributes[0].imgUrl, function(){
+		%>
+			<img src="images/listings/<%= attributes[0].imgUrl[x] %>">
+		<%
+			x++;
+			})
+		%>
+
+
+
+		<p><%= attributes[0].basicDetails %></p>
+		<p><%= attributes[0].propertyFacts %></p>
+		<p><%= attributes[0].amenitys %></p>
+		<p><%= attributes[0].desc %></p>
+
+	</div>
+</div>
+
+

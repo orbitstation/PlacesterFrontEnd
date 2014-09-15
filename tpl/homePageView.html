@@ -63,9 +63,32 @@
 
 		<div class="row tourBox">
 			<h1>A Tour Around Hingham Mass Happenings</h1>
+
+<%
+	x=0;
+	_.each(attributes.listings, function(){
+%>
+
 			<div class="col-xs-12 col-md-6 col-lg-4">
 				<div>
-					<img src="images/tour/tour1.jpg">
+					<img src="<%= attributes.listings[x].imgUrl %>">
+					<h3><a href="index.html#/listing/<%= attributes.listings[x].mls %>"><%= attributes.listings[x].address %></a></h3>
+					<p>Listing Agent: <%= attributes.listings[x].agent %></p>
+					<p>DRE: <%= attributes.listings[x].dre %></p>
+					<p><%= attributes.listings[x].desc %></p>
+				</div>
+			</div>
+
+<%
+	x++;
+	})
+%>
+
+
+
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div>
+					<img src="images/tour/tour3.jpg">
 					<h3>482, Braxton Ave.</h3>
 					<p>Listing Agent: Victoria Mejia Sanchez</p>
 					<p>DRE: 01187554</p>

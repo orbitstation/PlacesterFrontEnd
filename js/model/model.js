@@ -12,10 +12,10 @@ directory.homePageModel = Backbone.Model.extend({
 });
 
 
-directory.SingleArticleModel = Backbone.Model.extend({
+directory.listingModel = Backbone.Model.extend({
     sync: function(method, model, options) {
         if (method === "read") {
-            directory.store.findById(parseInt(this.id), function (data) {
+            directory.listingsStore.findByMls(parseInt(this.id), function (data) {
                 options.success(data);
             });
         }

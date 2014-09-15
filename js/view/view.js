@@ -30,7 +30,7 @@ directory.homePageView = Backbone.View.extend({
     },
     sync: function(method, model, options) {
         if (method === "read") {
-            directory.store.findById(1, function (data) {
+            directory.store.collectPageData(function (data) {
                 options.success(data);
             });
         }
@@ -38,10 +38,17 @@ directory.homePageView = Backbone.View.extend({
 });
 
 
-directory.singleArticleView = Backbone.View.extend({
+directory.listingView = Backbone.View.extend({
     render: function  (){
-        this.$el.html(this.template(this.model.attributes));
+        this.$el.html(this.template(this.model));
         return this;
+    },
+    sync: function(method, model, options) {
+        if (method === "read") {
+            directory.listingsStore.findByMls(this.num,function (data) {
+                options.success(data);
+            });
+        }
     }
 });
 
