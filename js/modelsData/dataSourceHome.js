@@ -88,20 +88,11 @@ directory.MemoryStore = function (successCallback, errorCallback) {
         {
             number: "1",
             mls: "100",
-            imgUrl: "images/listings/mls100/mls100-1.jpg", 
+            imgUrl: "images/listings/mls100/mls100-1s.jpg", 
             address: "566 Hunnewell St, Needham", 
             agent: "Victoria Mejia Sanchez",
             dre: "01187554",
             desc: "Courtest of Rodeo Realty"
-        },
-        {
-            number: "2",
-            mls: "101",
-            imgUrl: "images/listings/mls101/mls101-1.jpg", 
-            address: "62 Putnam St UNIT 62", 
-            agent: "Michael Boston",
-            dre: "007007007",
-            desc: "Click the address to see the listings template page"
         },
         {
             number: "3",
@@ -111,6 +102,15 @@ directory.MemoryStore = function (successCallback, errorCallback) {
             agent: "Victoria Mejia Sanchez",
             dre: "01187554",
             desc: "Courtest of Rodeo Realty"
+        },
+        {
+            number: "2",
+            mls: "101",
+            imgUrl: "images/listings/mls101/mls101-1s.jpg", 
+            address: "62 Putnam St UNIT 62", 
+            agent: "Michael Boston",
+            dre: "007007007",
+            desc: "Click the address to see the listings template page"
         }
     ];
 

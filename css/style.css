@@ -53,22 +53,21 @@ input{
 /* Bootstrap global style */
 .container-fluid div{
 	border: 0px solid black;
-}
+	}
 .row{
 	max-width: 900px;
 	margin: auto auto;
-}
+	}
 .row div{
 	margin: 0px;
 	padding: 0px;
-
-}
+	}
 .row.fullWidth{
 	max-width: 100%;
 	margin: 0px;
 	padding: 0px;
 	margin: 0px;
-}
+	}
 
 
 /* generic helpers */
@@ -201,8 +200,8 @@ input{
 
 /* listingPage */
 .listingBox img{
-	width: 300px;
+	width: 290px;
 	float: left;
-	margin: 10px;
+	margin: 10px 20px 10px 0px;
 	box-shadow: 0px 0px 5px #888888;
 	}
