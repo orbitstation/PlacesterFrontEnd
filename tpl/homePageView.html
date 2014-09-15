@@ -1,0 +1,139 @@
+		<div class="row fullWidth">
+		  <div class=".col-sm-12 col-lg-12 bannerImage">
+		  </div>
+		</div>
+
+		<div class="row searchBox">
+			<div class="col-xs-12 col-md-12 col-lg-12">
+
+				<h1 class="visible-md-block visible-lg-block visible-sm-block">Search For Real Estate on the South Shore</h1>
+				<h1 class="visible-xs-block">Search For Real Estate</h1>
+					
+				<div class="visible-md-block visible-lg-block visible-sm-block">
+					<div class="col-xs-0 col-md-0 col-lg-1"></div>
+					<div class="col-xs-12 col-md-12 col-lg-4">
+						<input type=text placeholder="Address, Zip, or MLS #"/>
+					</div>
+					<div class="col-xs-12 col-md-12 col-lg-7">
+						<select><option>Beds</option></select>
+						<select><option>Baths</option></select>
+						<select><option>Min $</option></select>
+						<select><option>Max $</option></select>
+					</div>
+					<div class="col-xs-12 col-md-12 col-lg-12">
+						<input class="searchSubmit" type=button value="CLICK HERE TO BEGIN SEARCHING REAL ESTATE IN YOUR AREA">
+					</div>
+				</div>
+				<div class="visible-xs-block" slyle="width: 300px;">
+					<div class="col-xs-12 col-md-12 col-lg-12">
+
+						<div class="input-group" class="smallSearch">
+							<input type=text placeholder="Address, Zip, or MLS #" class="form-control">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Go!</button>
+							</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="row neighborBox">
+			<h2>Featured Neighborhoods</h2>
+
+<%
+	x=0;
+	_.each(attributes.hoods, function(){
+%>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				<div>
+					<img src="<%= attributes.hoods[x].imgUrl %>">
+					<h3><%= attributes.hoods[x].title %></h3>
+					<p><%= attributes.hoods[x].desc %></p>
+				</div>
+			</div>
+<%
+	x++;
+	})
+%>
+
+		</div>
+
+		<div class="row tourBox">
+			<h1>A Tour Around Hingham Mass Happenings</h1>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div>
+					<img src="images/tour/tour1.jpg">
+					<h3>482, Braxton Ave.</h3>
+					<p>Listing Agent: Victoria Mejia Sanchez</p>
+					<p>DRE: 01187554</p>
+					<p>Courtesy of Rodeo Realty</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div>
+					<img src="images/tour/tour2.jpg">
+					<h3>Lorem Ipsum Dolor Sit Amet.</h3>
+					<p>Blog Category</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div>
+					<img src="images/tour/tour3.jpg">
+					<h3>482, Braxton Ave.</h3>
+					<p>Listing Agent: Victoria Mejia Sanchez</p>
+					<p>DRE: 01187554</p>
+					<p>Courtesy of Rodeo Realty</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div>
+					<img src="images/tour/tour4.jpg">
+					<h3>Susan Murphy</h3>
+					<p>Principle Broker</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div>
+					<img src="images/tour/tour1.jpg">
+					<h3>482, Braxton Ave.</h3>
+					<p>Listing Agent: Victoria Mejia Sanchez</p>
+					<p>DRE: 01187554</p>
+					<p>Courtesy of Rodeo Realty</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div>
+					<img src="images/tour/tour2.jpg">
+					<h3>Lorem Ipsum Dolor Sit Amet.</h3>
+					<p>Blog Category</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div>
+					<img src="images/tour/tour2.jpg">
+					<h3>Lorem Ipsum Dolor Sit Amet.</h3>
+					<p>Blog Category</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div>
+					<img src="images/tour/tour1.jpg">
+					<h3>482, Braxton Ave.</h3>
+					<p>Listing Agent: Victoria Mejia Sanchez</p>
+					<p>DRE: 01187554</p>
+					<p>Courtesy of Rodeo Realty</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div>
+					<img src="images/tour/tour5.jpg">
+					<h3>Jason Ocampo</h3>
+					<p>Principle Broker</p>
+				</div>
+			</div>
+
+		</div>
+

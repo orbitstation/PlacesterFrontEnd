@@ -70,16 +70,83 @@ input{
 	float: right;
 }
 
+.big{
+	font-size: 1.4em;
+}
+.highlight{
+	color: #e75640;
+}
+
+a{
+	color: #909090;
+	text-transform: uppercase;
+
+}
+a:link {	color: #909090;}
+a:visited {	color: #909090;}
+a:hover {	color: #e75640;}
+a:active {	color: #e75640;}
+
 .topTabs{
 	padding: 0px;
 	margin: 0px;
 }
-
+.topMenu a{
+	padding-left: 8px;
+}
+.topBox .iconHolder{
+	margin-bottom: 10px;
+}
+.iconHolder .big{
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.iconHolder img{
+	margin-bottom: 6px;
+}
 
 
 .topBox{
 	padding: 20px;
 }
+
+
+.footer{
+	background-color: #171717;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+.footer a{
+	color: white;
+}
+.footer hr{
+	background-color:#fff;
+	border:#000 1px dotted;
+	border-style: none none dotted;
+	color:#fff;	
+}
+
+.footer .bottomMenu a{
+	margin: 0px 10px;
+}
+
+.footer .badges{
+	width: 100%;
+}
+.footer .badges p{
+	display: inline-block;
+	width: 60px;
+	font-size: .8em;
+	margin: 10px;
+}
+.footer .badges img{
+	padding-bottom: 5px;
+}
+
+
+
+
 
 
 
@@ -126,6 +193,7 @@ input{
 
 .neighborBox img{
 	width: 100%;
+	border: 1px solid #999;
 }
 
 .tourBox{
@@ -135,9 +203,9 @@ input{
 .tourBox div div{
 	margin: 5px;
 	min-height: 350px;
-	height: 450px;
 	background-color: white;
 	padding-bottom: 20px;
+	box-shadow: 0px 0px 5px #888888;
 }
 .tourBox img{
 	width: 100%;
